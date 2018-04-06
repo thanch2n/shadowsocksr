@@ -3,6 +3,7 @@ ShadowsocksR for my own use
 ### Install
 
 I have a new VPS deployed with CentOS7:
+```
     cd /usr/local/
     yum install git -y
     git clone -b manyuser https://github.com/thanch2n/shadowsocksr.git
@@ -10,6 +11,7 @@ I have a new VPS deployed with CentOS7:
     bash initcfg.sh
     bash setSsrUser.sh
     service ssrmu start
+```
 
     <!-- optional -->
     bash getLibsodium.sh
