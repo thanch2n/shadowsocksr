@@ -1,0 +1,19 @@
+[Unit]
+Description=shadowsocksr manyuser
+After=
+Requires=
+
+[Service]
+Restart=always
+RestartSec=3
+TimeoutStartSec=
+ExecStartPre=
+ExecStartPre=
+ExecStart=/usr/bin/python /usr/local/shadowsocksr/server.py a > /usr/local/shadowsocksr/ssserver.log 2>&1
+ExecStop=
+ExecReload=
+ExecStartPost=
+ExecStopPost=
+
+[Install]
+WantedBy=multi-user.target

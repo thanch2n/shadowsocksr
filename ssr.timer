@@ -1,0 +1,10 @@
+[Unit]
+Description=auto restart ssr.service at 3:00 everyday
+
+[Timer]
+OnCalendar=
+OnStartupSec=5sec
+Unit=ssr.service
+
+[Install]
+WantedBy=multi-user.target
