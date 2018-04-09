@@ -26,12 +26,12 @@ setSsrUser(){
     ssr_forbid=""
     cd /usr/local/shadowsocksr
     python mujson_mgr.py -a -u "${ssr_user}" -p "${ssr_port}" -k "${ssr_password}" -m "${ssr_method}" -O "${ssr_protocol}" -G "${ssr_protocol_param}" -o "${ssr_obfs}" -s "${ssr_speed_limit_per_con}" -S "${ssr_speed_limit_per_user}" -t "${ssr_transfer}" -f "${ssr_forbid}"
-
+	
     ssr_user="b"
     ssr_port=53429
     ssr_password="aWdpdmVhZnVjawo="
-    ssr_method="aes-256-cfb"
-    ssr_protocol="origin"
+    ssr_method="none"
+    ssr_protocol="auth_chain_b"
     ssr_protocol_param=3
     ssr_obfs="tls1.2_ticket_auth_compatible"
     ssr_speed_limit_per_con=0

@@ -10,11 +10,12 @@ I have a new VPS deployed with CentOS7:
     cd /usr/local/shadowsocksr
     bash initcfg.sh
     bash setSsrUser.sh
-    service ssrmu start
+    bash setSsrService.sh
 ```
 
     <!-- optional -->
     bash getLibsodium.sh
+    bash getBBR.sh
 
 License
 -------
